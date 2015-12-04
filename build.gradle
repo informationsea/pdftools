@@ -1,0 +1,22 @@
+group 'info.informationsea.'
+version '0.1-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+mainClassName = "info.informationsea.pdftools.PDFCommands"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.apache.pdfbox:pdfbox:1.8.10'
+    compile 'org.apache.pdfbox:preflight:1.8.10'
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.slf4j:slf4j-simple:1.7.13'
+    compile 'args4j:args4j:2.32'
+    compile 'org.projectlombok:lombok:1.16.6'
+}
